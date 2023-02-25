@@ -13,7 +13,7 @@ export function Button({ title, type = 'GREEN', ...rest }: ButtonProps) {
       type={type}
       {...rest}
     >
-      <Title></Title>
+      <Title>{title}</Title>
     </Container >
   )
 }
