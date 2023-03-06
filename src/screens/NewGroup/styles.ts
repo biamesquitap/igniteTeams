@@ -1,8 +1,9 @@
+import { SafeAreaView } from "react-native-safe-area-context";
 import { UsersThree } from "phosphor-react-native";
 import styled from "styled-components/native";
 
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   flex: 1;
   padding: 24px;
   background-color: ${({ theme }) => theme.COLORS.GRAY_600};
@@ -18,4 +19,8 @@ export const IconGroup = styled(UsersThree).attrs(({ theme }) => ({
   color: theme.COLORS.GREEN_700
 }))`
   align-self: center;
+`
+
+export const SpaceBottom = styled.View`
+  margin-bottom: 20px;
 `

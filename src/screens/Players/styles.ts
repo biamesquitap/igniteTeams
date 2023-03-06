@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   flex: 1;
   padding:24px;
   background-color: ${({ theme }) => theme.COLORS.GRAY_600};
@@ -21,7 +22,7 @@ align-items: center;
 margin: 32px 0 12px;
 `
 
-export const NumbersOfPlayers = styled.Text`
+export const NumberOfPlayers = styled.Text`
  ${({ theme }) => css`
   color: ${theme.COLORS.GRAY_200};
   font-size: ${theme.FONT_SIZE.SM}px;

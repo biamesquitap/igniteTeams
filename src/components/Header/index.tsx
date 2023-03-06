@@ -1,4 +1,5 @@
 
+import { useNavigation } from "@react-navigation/native";
 import { BackButton, BackIcon, Container, Logo } from "./styles";
 import logoImg from "@assets/logo.png"
 
@@ -7,12 +8,19 @@ type PropsHeader = {
 }
 
 export function Header({ showBackButton = false }: PropsHeader) {
+  const navigation = useNavigation()
+
+  function handleGoHome() {
+    navigation.navigate('Groups')
+    //pode usar tbm o navigation.popToTop()
+  }
+
   return (
     <Container>
 
       {
         showBackButton &&
-        <BackButton>
+        <BackButton onPress={handleGoHome}>
           <BackIcon />
         </BackButton>
       }
