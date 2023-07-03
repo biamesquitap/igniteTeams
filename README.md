@@ -5,3 +5,17 @@
 <p> 
   Aplicativo desenvolvido em react native, para jogar em salas com os amigos.
 </p>
+
+
+<h2>Reproduzir localmente</h2>
+
+```
+# Clone this repository
+$ git clone https://github.com/biamesquitap/igniteTeams.git
+# Access the project folder in your terminal
+$ cd ignite-teams
+# Install the dependencies
+$ npm i
+# Run the application in development mode
+$ expo start
+# The application will open, so you will have to open the `Expo Go` app on your smartphone and read the QR Code on your terminal
