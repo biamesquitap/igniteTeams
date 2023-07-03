@@ -2,6 +2,6 @@
 
 <h1> IgniteTeams</h1>
 
-<h3> 
+<p> 
   Aplicativo desenvolvido em react native, para jogar em salas com os amigos.
-</h3>
+</p>
